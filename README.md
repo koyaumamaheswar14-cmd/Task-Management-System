@@ -93,7 +93,7 @@ action_time – timestamp (default: current time)
 - Password handling with validation (hashing recommended)
 - Prevention of unauthorized access to application resources
 ## Project Structure
-src/com/taskmanager/controller
+-------> src/com/taskmanager/controller <-------
 
 LoginServlet.java – Handles user login
 
@@ -105,7 +105,7 @@ TaskServlet.java – Task CRUD operations
 
 LogoutServlet.java – Session termination
 
-src/com/taskmanager/dao
+---------->src/com/taskmanager/dao<---------
 
 UserDAO.java – User database operations
 
@@ -113,7 +113,7 @@ TaskDAO.java – Task database operations
 
 HistoryDAO.java – Task history persistence
 
-src/com/taskmanager/model
+------------> src/com/taskmanager/model <------
 
 User.java – User entity
 
@@ -121,45 +121,24 @@ Task.java – Task entity
 
 TaskHistory.java – Task history entity
 
-src/com/taskmanager/util
+-------> src/com/taskmanager/util <------------
 
 DBConnection.java – Database connection utility
-Task-Management-System/
-│
-├── src/
-│   ├── com.taskmanager.controller
-│   │   ├── LoginServlet.java
-│   │   ├── RegisterServlet.java
-│   │   ├── ForgotPasswordServlet.java
-│   │   ├── TaskServlet.java
-│   │   └── LogoutServlet.java
-│   │
-│   ├── com.taskmanager.dao
-│   │   ├── UserDAO.java
-│   │   ├── TaskDAO.java
-│   │   └── HistoryDAO.java
-│   │
-│   ├── com.taskmanager.model
-│   │   ├── User.java
-│   │   ├── Task.java
-│   │   └── TaskHistory.java
-│   │
-│   └── com.taskmanager.util
-│       └── DBConnection.java
-│
-├── WebContent/
-│   ├── css/
-│   ├── js/
-│   ├── login.jsp
-│   ├── register.jsp
-│   ├── forgotPassword.jsp
-│   ├── dashboard.jsp
-│   └── history.jsp
-│
-├── database/
-│   └── task_management.sql
-│
-├── README.md
+------> Frontend (JSP) <-------------
+
+WebContent/css – Application stylesheets
+
+WebContent/js – Client-side scripts
+
+login.jsp – User login page
+
+register.jsp – User registration page
+
+forgotPassword.jsp – Password recovery page
+
+dashboard.jsp – Task management dashboard
+
+history.jsp – Task history view
 
 
 
