@@ -38,41 +38,92 @@ The system ensures data privacy through session-based authentication and allows 
 - Apache Tomcat (Version 11.0)
 ## Database Schema
 ### Users Table
-+----------+--------------+------+-----+---------+----------------+
-| Field    | Type         | Null | Key | Default | Extra          |
-+----------+--------------+------+-----+---------+----------------+
-| id       | int          | NO   | PRI | NULL    | auto_increment |
-| name     | varchar(100) | YES  |     | NULL    |                |
-| email    | varchar(100) | YES  | UNI | NULL    |                |
-| password | varchar(255) | YES  |     | NULL    |                |
-+----------+--------------+------+-----+---------+----------------+
+id – int, primary key, auto-increment
+
+name – varchar(100)
+
+email – varchar(100), unique
+
+password – varchar(255)
+
 ### Tasks Table
-+-------------+--------------+------+-----+---------+----------------+
-| Field       | Type         | Null | Key | Default | Extra          |
-+-------------+--------------+------+-----+---------+----------------+
-| id          | int          | NO   | PRI | NULL    | auto_increment |
-| title       | varchar(255) | YES  |     | NULL    |                |
-| description | text         | YES  |     | NULL    |                |
-| status      | varchar(20)  | YES  |     | NULL    |                |
-| user_id     | int          | YES  | MUL | NULL    |                |
-+-------------+--------------+------+-----+---------+----------------+
+Tasks Table
+
+id – int, primary key, auto-increment
+
+title – varchar(255)
+
+description – text
+
+status – varchar(20)
+
+Pending
+
+Completed
+
+Cancelled
+
+user_id – int, foreign key (Users.id)
 ## Task History
-+-------------+--------------+------+-----+-------------------+-------------------+
-| Field       | Type         | Null | Key | Default           | Extra             |
-+-------------+--------------+------+-----+-------------------+-------------------+
-| id          | int          | NO   | PRI | NULL              | auto_increment    |
-| task_id     | int          | YES  |     | NULL              |                   |
-| user_id     | int          | YES  |     | NULL              |                   |
-| action      | varchar(20)  | YES  |     | NULL              |                   |
-| title       | varchar(255) | YES  |     | NULL              |                   |
-| action_time | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
-+-------------+--------------+------+-----+-------------------+-------------------+
+Task History Table
+
+id – int, primary key, auto-increment
+
+task_id – int
+
+user_id – int
+
+action – varchar(20)
+
+CREATED
+
+UPDATED
+
+DELETED
+
+STATUS_CHANGED
+
+title – varchar(255)
+
+action_time – timestamp (default: current time)
+
 ## Authentication and Security
 - Session management using HttpSession
 - User-specific task access control
 - Password handling with validation (hashing recommended)
 - Prevention of unauthorized access to application resources
 ## Project Structure
+src/com/taskmanager/controller
+
+LoginServlet.java – Handles user login
+
+RegisterServlet.java – Handles user registration
+
+ForgotPasswordServlet.java – Password reset logic
+
+TaskServlet.java – Task CRUD operations
+
+LogoutServlet.java – Session termination
+
+src/com/taskmanager/dao
+
+UserDAO.java – User database operations
+
+TaskDAO.java – Task database operations
+
+HistoryDAO.java – Task history persistence
+
+src/com/taskmanager/model
+
+User.java – User entity
+
+Task.java – Task entity
+
+TaskHistory.java – Task history entity
+
+src/com/taskmanager/util
+
+DBConnection.java – Database connection utility
 Task-Management-System/
 │
 ├── src/
