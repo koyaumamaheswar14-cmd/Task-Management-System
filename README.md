@@ -124,6 +124,8 @@ TaskHistory.java – Task history entity
 -------> src/com/taskmanager/util <------------
 
 DBConnection.java – Database connection utility
+
+
 ------> Frontend (JSP) <-------------
 
 WebContent/css – Application stylesheets
