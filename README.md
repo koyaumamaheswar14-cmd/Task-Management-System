@@ -110,3 +110,54 @@ Task-Management-System/
 │
 ├── README.md
 
+
+
+Task-Management-System/
+│
+├── .settings/
+├── build/
+│   └── classes/
+│       └── com/
+│           └── taskmanager/
+│
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── taskmanager/
+│                   ├── controller/
+│                   │   ├── LoginServlet.java
+│                   │   ├── RegisterServlet.java
+│                   │   ├── ForgotPasswordServlet.java
+│                   │   ├── TaskServlet.java
+│                   │   └── LogoutServlet.java
+│                   │
+│                   ├── dao/
+│                   │   ├── UserDAO.java
+│                   │   ├── TaskDAO.java
+│                   │   └── HistoryDAO.java
+│                   │
+│                   ├── model/
+│                   │   ├── User.java
+│                   │   ├── Task.java
+│                   │   └── TaskHistory.java
+│                   │
+│                   └── util/
+│                       └── DBConnection.java
+│
+├── WebContent/
+│   ├── css/
+│   ├── js/
+│   ├── login.jsp
+│   ├── register.jsp
+│   ├── forgotPassword.jsp
+│   ├── dashboard.jsp
+│   └── history.jsp
+│
+├── database/
+│   └── task_management.sql
+│
+├── .classpath
+├── .project
+└── README.md
+
