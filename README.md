@@ -2,7 +2,7 @@
 A full-stack web application that allows users to securely register, log in, reset passwords, and manage their personal tasks.  
 This project was developed as part of a **Full Stack Developer Intern – Technical Assignment**
 ## Project Overview
-The Personal Task Management System is a web-based application designed to help users manage their daily tasks efficiently.  
+The Task Management System is a web-based application designed to help users manage their daily tasks efficiently.  
 The system ensures data privacy through session-based authentication and allows users to perform task-related operations in a secure environment.
 ## Features
 ### Authentication
