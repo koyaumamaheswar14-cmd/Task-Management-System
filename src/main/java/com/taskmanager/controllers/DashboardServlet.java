@@ -32,7 +32,7 @@ public class DashboardServlet extends HttpServlet {
 		try {
 			tasks = new TaskDAO().getTasksByUser(userId);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+	
 			e.printStackTrace();
 		}
 
