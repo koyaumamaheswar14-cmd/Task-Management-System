@@ -185,7 +185,8 @@ MySQL Connector/J (JDBC Driver)
 Step 1: Clone the Repository
 
 
-git clone <your-github-repo-url>
+git clone https://github.com/koyaumamaheswar14-cmd/Task-Management-System.git
+
 
 Step 2: Import Project into Eclipse
 
