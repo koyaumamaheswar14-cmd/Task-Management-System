@@ -280,6 +280,21 @@ http://localhost:8080/TaskManagementSystem/
 
 5)View task history
 
-<img width="1904" height="1029" alt="Screenshot 2026-01-15 102014" src="https://github.com/user-attachments/assets/d124ef36-521c-4f36-bc1a-2e5904d97032" />
 
+## Screenshots
+
+### Register Page
+<img width="1903" height="1028" alt="Screenshot 2026-01-16 114703" src="https://github.com/user-attachments/assets/6f7c8f6f-9d07-4d7d-b9fb-57ef51663bc2" />
+
+
+### Login Page
+<img width="1911" height="1023" alt="Screenshot 2026-01-16 113935" src="https://github.com/user-attachments/assets/c4cd7930-9bdf-41a4-96ae-2fd62a53f4b2" />
+
+
+### Dashboard
+<img width="1909" height="1030" alt="Screenshot 2026-01-16 114306" src="https://github.com/user-attachments/assets/8c606d09-610e-436e-b04b-7cc74eb5be8a" />
+
+
+### Task History
+<img width="1908" height="1023" alt="Screenshot 2026-01-16 114525" src="https://github.com/user-attachments/assets/10e114f1-cfd5-4270-9cd6-c914ada13cc6" />
 
