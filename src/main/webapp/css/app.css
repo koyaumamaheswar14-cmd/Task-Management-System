@@ -1,11 +1,11 @@
-/* 🔹 RESET */
+/*  RESET */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* 🔒 HARD SCROLL LOCK */
+        /*  HARD SCROLL LOCK */
         html, body {
             width: 100%;
             height: 100%;
@@ -15,7 +15,7 @@
             touch-action: none;
         }
 
-        /* 🔹 BACKGROUND (SAME AS AUTH PAGES) */
+        /*  BACKGROUND (SAME AS AUTH PAGES) */
         body {
             background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
             display: flex;
@@ -25,7 +25,7 @@
             inset: 0;
         }
 
-        /* 🔹 GLASS CARD */
+        /*  GLASS CARD */
         .form-container {
             background: rgba(255, 255, 255, 0.55);
             backdrop-filter: blur(14px);
@@ -36,14 +36,14 @@
             border: 1px solid rgba(255,255,255,0.6);
         }
 
-        /* 🔹 TITLE */
+        /*  TITLE */
         h2 {
             text-align: center;
             margin-bottom: 25px;
             color: #0f172a;
         }
 
-        /* 🔹 FORM ELEMENTS */
+        /*  FORM ELEMENTS */
         input, textarea {
             width: 100%;
             padding: 12px;
@@ -65,7 +65,7 @@
             color: #64748b;
         }
 
-        /* 🔹 BUTTON */
+        /*  BUTTON */
         button {
             width: 100%;
             padding: 12px;
@@ -78,7 +78,7 @@
             cursor: pointer;
         }
 
-        /* 🔹 BACK LINK */
+        /*  BACK LINK */
         .back {
             display: block;
             margin-top: 15px;
@@ -91,7 +91,7 @@
    ERROR MESSAGE (FIX)
 ===================== */
 .error {
-    color: #dc2626;          /* 🔴 red */
+    color: #dc2626;          /*  red */
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -102,7 +102,7 @@
 ===================== */
 .links {
     display: flex;
-    justify-content: space-between; /* 🔑 left & right */
+    justify-content: space-between; /*  left & right */
     margin-top: 18px;
     padding: 0 6px;                 /* space from box edges */
 }
