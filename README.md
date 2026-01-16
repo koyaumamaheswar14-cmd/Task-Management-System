@@ -90,7 +90,7 @@ action_time – timestamp (default: current time)
 ## Authentication and Security
 - Session management using HttpSession
 - User-specific task access control
-- Password handling with validation (hashing recommended)
+- Password validation implemented (hashing can be added for production)
 - Prevention of unauthorized access to application resources
 ## Project Structure
 //--- src/main/java/com/taskmanager/controllers --->
