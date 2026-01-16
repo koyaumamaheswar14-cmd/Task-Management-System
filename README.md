@@ -141,10 +141,7 @@ TaskHistory.java – History entity (action, taskId, userId, timestamp etc.)
 //
 
 
-Frontend (JSP)
-______________________________________________________________________________________________________________________________________________________
-
-
+## Frontend (JSP)
 //---src/main/webapp/css -->
 
 app.css – Common UI styling for the application
@@ -172,9 +169,7 @@ history.jsp – Task history page
 //
 
 
-How to Run the Project Locally :-
-__________________________________________________________________________________________________________________________________________________________________
-
+## How to Run the Project Locally :-
 Prerequisites :-
 
 Java (JDK 17+ recommended)
@@ -272,8 +267,8 @@ Step 9: Open in Browser
 
 http://localhost:8080/TaskManagementSystem/
 
-Testing Flow
-_______________________________________________________________________________________________________________________________________________________________
+## Testing Flow
+
 
 1)Register a new user
 
