@@ -172,5 +172,118 @@ history.jsp – Task history page
 //
 
 
+How to Run the Project Locally
+__________________________________________________________________________________________________________________________________________________________________
+
+Prerequisites :-
+
+Java (JDK 17+ recommended)
+
+Eclipse IDE (Enterprise Java / EE)
+
+Apache Tomcat (Version 11.0)
+
+MySQL Server
+
+MySQL Connector/J (JDBC Driver)
+
+Step 1: Clone the Repository
+
+
+git clone <your-github-repo-url>
+
+Step 2: Import Project into Eclipse
+
+
+Open Eclipse
+
+Go to File → Import
+
+Select Existing Projects into Workspace
+
+Choose the project folder and click Finish
+
+Step 3: Create Database in MySQL
+
+
+CREATE DATABASE taskmanager_db;
+
+Step 4: Create Tables
+
+
+Run the SQL queries for:
+
+users
+
+tasks
+
+task_history
+
+Step 5: Configure Database Connection
+
+
+Open:
+
+src/main/java/com/taskmanager/dao/DBConnection.java
+
+Update your MySQL credentials:
+
+String url = "jdbc:mysql://localhost:3306/taskmanager_db";
+String user = "root";
+String password = "your_password";
+
+Step 6: Add MySQL JDBC Driver
+
+
+Download MySQL Connector/J
+
+In Eclipse:-
+
+Right click project → Build Path → Configure Build Path
+
+Go to Libraries
+
+Click Add External JARs
+
+Select the MySQL connector .jar file
+
+Step 7: Configure Apache Tomcat in Eclipse
+
+
+Go to Window → Preferences → Server → Runtime Environments
+
+Click Add
+
+Select Apache Tomcat
+
+Browse your Tomcat installation folder and finish setup
+
+Step 8: Run the Application
+
+
+Right click project → Run As → Run on Server
+
+Select Tomcat Server
+
+Start the server
+
+Step 9: Open in Browser
+
+
+http://localhost:8080/TaskManagementSystem/
+
+Testing Flow
+_______________________________________________________________________________________________________________________________________________________________
+
+1)Register a new user
+
+2)Login using registered credentials
+
+3)Add tasks
+
+4)Update/Edit/Delete tasks
+
+5)View task history
+
 
 
