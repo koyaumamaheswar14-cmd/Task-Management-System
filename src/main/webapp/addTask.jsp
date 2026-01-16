@@ -22,7 +22,7 @@
 
     <h2>Add New Task</h2>
 
-    <!-- ✅ Correct servlet mapping -->
+    <!--  Correct servlet mapping -->
     <form action="<%=request.getContextPath()%>/addTask" method="post">
 
         <input type="text" name="title" placeholder="Task Title" required />
