@@ -34,14 +34,14 @@ public class AddTaskServlet extends HttpServlet {
                     userId
             );
 
-            // 🔹 ADD TASK
+            // ADD TASK
             int taskId = new TaskDAO().addTask(task); 
-            // ⚠️ addTask() must return generated task ID
+            //  addTask() must return generated task ID
 
-            // 🔹 LOG HISTORY (CREATED)
+            //  LOG HISTORY (CREATED)
             TaskHistoryDAO.log(taskId, userId, "CREATED", title);
 
-            // 🔹 Redirect to dashboard
+            //  Redirect to dashboard
             resp.sendRedirect(req.getContextPath() + "/dashboard");
 
         } catch (Exception e) {
