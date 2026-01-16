@@ -37,6 +37,46 @@ The system ensures data privacy through session-based authentication and allows 
 ### Server
 - Apache Tomcat (Version 11.0)
 ## Database Schema
+Database Schema
+1) Users Table (users)
+
+id INT PRIMARY KEY AUTO_INCREMENT
+
+name VARCHAR(100) NOT NULL
+
+email VARCHAR(100) UNIQUE NOT NULL
+
+password VARCHAR(255) NOT NULL
+
+2) Tasks Table (tasks)
+
+id INT PRIMARY KEY AUTO_INCREMENT
+
+title VARCHAR(255) NOT NULL
+
+description TEXT
+
+status VARCHAR(20) NOT NULL
+
+Values: Pending, Completed, Cancelled
+
+user_id INT NOT NULL (Foreign Key → users.id)
+
+3) Task History Table (task_history)
+
+id INT PRIMARY KEY AUTO_INCREMENT
+
+task_id INT NOT NULL
+
+user_id INT NOT NULL
+
+action VARCHAR(20) NOT NULL
+
+Values: CREATED, UPDATED, DELETED, STATUS_CHANGED
+
+title VARCHAR(255) NOT NULL
+
+action_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ### Users Table
 id – int, primary key, auto-increment
 
