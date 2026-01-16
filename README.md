@@ -93,7 +93,7 @@ action_time – timestamp (default: current time)
 - Password handling with validation (hashing recommended)
 - Prevention of unauthorized access to application resources
 ## Project Structure
------------------------> src/main/java/com/taskmanager/controllers <------------------------------
+//--- src/main/java/com/taskmanager/controllers --->
 LoginServlet.java – Handles user login authentication
 RegisterServlet.java – Handles new user registration
 ForgotPasswordServlet.java – Handles forgot password validation (email/username check)
@@ -108,12 +108,12 @@ UpdateTaskServlet.java – Updates existing task
 DeleteTaskServlet.java – Deletes a task
 HistoryServlet.java – Displays task history (added/updated/deleted actions) //
 
-///--src/main/java/com/taskmanager/dao ------>
+//---src/main/java/com/taskmanager/dao ------>
 DBConnection.java – Database connection utility (JDBC + MySQL)
 UserDAO.java – User database operations (register/login/forgot/reset)
 TaskDAO.java – Task database operations (CRUD + status updates)
 TaskHistoryDAO.java – Stores and fetches task history records //
---------------------------> src/main/java/com/taskmanager/model <------------------------------
+//---src/main/java/com/taskmanager/model ---->
 User.java – User entity (id, name, email, password etc.)
 Task.java – Task entity (id, title, description, status, dueDate etc.)
 TaskHistory.java – History entity (action, taskId, userId, timestamp etc.) //
@@ -121,9 +121,9 @@ TaskHistory.java – History entity (action, taskId, userId, timestamp etc.) //
 
 ---------------------------------------------------------Frontend (JSP)---------------------------------------------------------------------------------------------------------------------------------------------
 
---------------------------> src/main/webapp/css <------------------------------
+//---src/main/webapp/css -->
 app.css – Common UI styling for the application //
--------------------------->   src/main/webapp     <------------------------------
+//---src/main/webapp-->
 login.jsp – Login page
 register.jsp – Registration page
 forgotPassword.jsp – Forgot password page
