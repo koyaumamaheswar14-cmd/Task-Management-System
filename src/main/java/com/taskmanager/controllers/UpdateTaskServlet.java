@@ -36,13 +36,13 @@ public class UpdateTaskServlet extends HttpServlet {
             task.setStatus(status);
             task.setUserId(userId);
 
-            // 🔹 UPDATE TASK
+            // UPDATE TASK
             new TaskDAO().updateTask(task);
 
-            // 🔹 LOG HISTORY (UPDATED)
+            //  LOG HISTORY (UPDATED)
             TaskHistoryDAO.log(taskId, userId, "UPDATED", title);
 
-            // 🔹 Redirect back to dashboard
+            //  Redirect back to dashboard
             resp.sendRedirect(req.getContextPath() + "/dashboard");
 
         } catch (Exception e) {
