@@ -108,7 +108,7 @@ UpdateTaskServlet.java – Updates existing task
 DeleteTaskServlet.java – Deletes a task
 HistoryServlet.java – Displays task history (added/updated/deleted actions) //
 
---------------------------> src/main/java/com/taskmanager/dao <------------------------------
+///src/main/java/com/taskmanager/dao ------>
 DBConnection.java – Database connection utility (JDBC + MySQL)
 UserDAO.java – User database operations (register/login/forgot/reset)
 TaskDAO.java – Task database operations (CRUD + status updates)
