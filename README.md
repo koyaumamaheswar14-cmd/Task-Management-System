@@ -122,7 +122,7 @@ Task.java – Task entity (id, title, description, status, dueDate etc.)
 TaskHistory.java – History entity (action, taskId, userId, timestamp etc.) //
 
 
----------------------------------------------------------Frontend (JSP)--------------------------------------------------------------------------------------------------
+---------------------------------------------------------Frontend (JSP)------------------------------------------------------------------
 
 //---src/main/webapp/css -->
 app.css – Common UI styling for the application //
