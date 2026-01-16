@@ -95,45 +95,74 @@ action_time – timestamp (default: current time)
 ## Project Structure
 //--- src/main/java/com/taskmanager/controllers --->
 LoginServlet.java – Handles user login authentication
+
 RegisterServlet.java – Handles new user registration
+
 ForgotPasswordServlet.java – Handles forgot password validation (email/username check)
+
 ResetPasswordServlet.java – Updates user password securely
+
 LogoutServlet.java – Ends session and logs out user
+
 DashboardServlet.java – Loads dashboard data for logged-in users
+
 TaskListServlet.java – Displays all tasks of the user
+
 ViewTaskServlet.java – View a single task details
+
 AddTaskServlet.java – Adds new task
+
 EditTaskServlet.java – Loads task data into edit form
+
 UpdateTaskServlet.java – Updates existing task
+
 DeleteTaskServlet.java – Deletes a task
+
 HistoryServlet.java – Displays task history (added/updated/deleted actions) //
 
 
 //---src/main/java/com/taskmanager/dao ------>
+
 DBConnection.java – Database connection utility (JDBC + MySQL)
+
 UserDAO.java – User database operations (register/login/forgot/reset)
+
 TaskDAO.java – Task database operations (CRUD + status updates)
+
 TaskHistoryDAO.java – Stores and fetches task history records //
 
 
 //---src/main/java/com/taskmanager/model ---->
+
 User.java – User entity (id, name, email, password etc.)
+
 Task.java – Task entity (id, title, description, status, dueDate etc.)
+
 TaskHistory.java – History entity (action, taskId, userId, timestamp etc.) //
 
 
 ---------------------------------------------------------Frontend (JSP)------------------------------------------------------------------
 
 //---src/main/webapp/css -->
+
 app.css – Common UI styling for the application //
+
 //---src/main/webapp-->
+
 login.jsp – Login page
+
 register.jsp – Registration page
+
 forgotPassword.jsp – Forgot password page
+
 resetPassword.jsp – Reset password page
+
 dashboard.jsp – Main dashboard page
+
 addTask.jsp – Add new task page
+
 editTask.jsp – Edit task page
+
 history.jsp – Task history page //
 
 
