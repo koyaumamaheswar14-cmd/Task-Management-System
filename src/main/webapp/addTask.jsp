@@ -32,7 +32,7 @@
         <button type="submit">Add Task</button>
     </form>
 
-    <a class="back" href="<%=request.getContextPath()%>/dashboard.jsp">⬅ Back to Dashboard</a>
+    <a class="back" href="<%=request.getContextPath()%>/dashboard.jsp"> Back to Dashboard</a>
 </div>
 
 </body>
