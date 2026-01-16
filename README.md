@@ -1,4 +1,4 @@
-# Personal Task Management System
+# Task Management System
 A full-stack web application that allows users to securely register, log in, reset passwords, and manage their personal tasks.  
 This project was developed as part of a **Full Stack Developer Intern – Technical Assignment**
 ## Project Overview
