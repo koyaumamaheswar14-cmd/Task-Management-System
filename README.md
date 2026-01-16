@@ -108,11 +108,14 @@ UpdateTaskServlet.java – Updates existing task
 DeleteTaskServlet.java – Deletes a task
 HistoryServlet.java – Displays task history (added/updated/deleted actions) //
 
+
 //---src/main/java/com/taskmanager/dao ------>
 DBConnection.java – Database connection utility (JDBC + MySQL)
 UserDAO.java – User database operations (register/login/forgot/reset)
 TaskDAO.java – Task database operations (CRUD + status updates)
 TaskHistoryDAO.java – Stores and fetches task history records //
+
+
 //---src/main/java/com/taskmanager/model ---->
 User.java – User entity (id, name, email, password etc.)
 Task.java – Task entity (id, title, description, status, dueDate etc.)
