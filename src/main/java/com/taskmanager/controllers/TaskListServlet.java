@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/tasks")   // ⭐ THIS CREATES /tasks URL
+@WebServlet("/tasks")   //  THIS CREATES /tasks URL
 public class TaskListServlet extends HttpServlet {
 
     /**
