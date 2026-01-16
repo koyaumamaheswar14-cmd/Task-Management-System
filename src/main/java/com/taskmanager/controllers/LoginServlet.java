@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    // 🔹 SHOW LOGIN PAGE (GET)
+    //  SHOW LOGIN PAGE (GET)
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
         req.getRequestDispatcher("login.jsp").forward(req, resp);
     }
 
-    // 🔹 HANDLE LOGIN (POST)
+    //  HANDLE LOGIN (POST)
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
