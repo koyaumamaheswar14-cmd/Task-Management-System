@@ -8,7 +8,7 @@ import com.taskmanager.model.TaskHistory;
 
 public class TaskHistoryDAO {
 
-    // 🔹 LOG ACTION
+    //  LOG ACTION
     public static void log(int taskId, int userId, String action, String title) {
         try (Connection con = DBConnection.getConnection()) {
             PreparedStatement ps = con.prepareStatement(
@@ -24,7 +24,7 @@ public class TaskHistoryDAO {
         }
     }
 
-    // 🔹 FETCH HISTORY BY USER
+    //  FETCH HISTORY BY USER
     public static List<TaskHistory> getByUser(int userId) {
         List<TaskHistory> list = new ArrayList<>();
 
