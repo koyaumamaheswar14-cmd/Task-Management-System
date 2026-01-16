@@ -172,7 +172,7 @@ history.jsp – Task history page
 //
 
 
-How to Run the Project Locally
+How to Run the Project Locally :-
 __________________________________________________________________________________________________________________________________________________________________
 
 Prerequisites :-
